@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Project 3 Quiz</string>
+
+    // User Input(EditTExt)
+    <string name="hints_name">Please Enter Your Name</string>
+
+    // Question 1 (Boolean)
+    <string name="question_1">1.  Which one known as “King of Fruits”?</string>
+    <string name="q1_answer1">Rambutan</string>
+    <string name="q1_answer2">Durian</string>
+    <string name="q1_answer3">Papaya</string>
+
+    // question 2 (Boolean)
+    <string name="question_2">2.  China is major importer of “King of Fruits”</string>
+    <string name="q2_answer1">True</string>
+    <string name="q2_answer2">False</string>
+
+    // question 3 (Checked Box)
+    <string name="question_3">3.  “King of Fruits” mostly grown in\n[select the correct answer]</string>
+    <string name="q3_answer1">Indonesia</string>
+    <string name="q3_answer2">Malaysia</string>
+    <string name="q3_answer3">Thailand</string>
+
+    // question 4 (Boolean)
+    <string name="question_4">4.  Which of the following is national fruit of Bangladesh?</string>
+    <string name="q4_answer1">Jackfruit</string>
+    <string name="q4_answer2">Mangosteen</string>
+    <string name="q4_answer3">Jujube</string>
+
+    // question 5 (Boolean)
+    <string name="question_5">5.  What is the scientific name of Jackfruit?\n[Take a Guess]</string>
+    <string name="q5_answer1">Carica papaya</string>
+    <string name="q5_answer2">Citrus limon</string>
+    <string name="q5_answer3">Artocarpus heterophyllus</string>
+
+    // question 6 (Boolean)
+    <string name="question_6">6.  Which best described by inedible deep reddish-purple colored rind when ripe?</string>
+    <string name="q6_answer1">Star Fruit</string>
+    <string name="q6_answer2">Papaya</string>
+    <string name="q6_answer3">Mangosteen</string>
+
+    // question 7 (EditTExt)
+    <string name="question_7">7.  List two of your favorite tropical fruits?\n[separate with ,]</string>
+    <string name="hints">Answer 1, Answer 2</string>
+
+    // question 8 (Checked Box)
+    <string name="question_8">8.  Rambutan\n[select the correct answer]</string>
+    <string name="q8_answer1">Native to  Malay-Indonesian region</string>
+    <string name="q8_answer2">Spikes Resemble hair</string>
+    <string name="q8_answer3">Thrives in cold climate</string>
+
+
+
+
+
+
+</resources>
