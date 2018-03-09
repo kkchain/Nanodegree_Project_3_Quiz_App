@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Project 3 Quiz</string>
 
+    // Title
+    <string name="title">Tropical Fruits Quiz</string>
+
     // User Input(EditTExt)
     <string name="hints_name">Please Enter Your Name</string>
 

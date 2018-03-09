@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="font">35sp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="font_size">16sp</dimen>
     <dimen name="padding_all">16dp</dimen>
-    <dimen name="padding_top">16dp</dimen>
+    <dimen name="padding_tt">30dp</dimen>
     <dimen name="padding_bottom1">50dp</dimen>
     <dimen name="padding_bottom">12dp</dimen>
     <dimen name="layout_bottom">20dp</dimen>

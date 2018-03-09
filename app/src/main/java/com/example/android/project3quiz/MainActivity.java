@@ -62,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
         // Question 7 get participant favorite fruits
         EditText fruitInput = (findViewById(R.id.enter_fruits));
         // assign String to nameInput
-        String  favoriteFruits = fruitInput.getText().toString();
+        String favoriteFruits = fruitInput.getText().toString();
 
         // toast
-        String displayResult = userName + ", You Score is " + totalScore + "\n Your favorite tropical fruits are " + favoriteFruits;
+        String displayResult = userName + ",You Scored " + totalScore + " out of 10" + "\n You liked " + favoriteFruits;
         Toast.makeText(this, displayResult, Toast.LENGTH_LONG).show();
     }
 
