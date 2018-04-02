@@ -4,61 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="@dimen/padding_all"
+        android:background="@color/backGround"
         tools:context="com.example.android.project3quiz.MainActivity">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="200dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/photo" />
+            style="@style/style1">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style2"
                 android:fontFamily="casual"
                 android:padding="@dimen/padding_all"
                 android:text="@string/title"
-                android:textColor="#00C853"
                 android:textSize="@dimen/font"
-                android:textStyle="bold" />
+                android:background="@drawable/tropical"/>
 
         </LinearLayout>
 
 
-        // (EditText)
-
+        // (EditText = Name Input)
         <EditText
             android:id="@+id/enter_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/style3"
             android:layout_marginBottom="@dimen/layout_bottom"
             android:hint="@string/hints_name"
             android:paddingBottom="@dimen/padding_bottom"
             android:paddingTop="@dimen/padding_tt" />
 
         // Question 1 (Multiple Choice)
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/style4"
             android:paddingBottom="@dimen/padding_bottom"
             android:text="@string/question_1"
-            android:textSize="@dimen/text_size"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_size"/>
 
         <RadioGroup
             android:id="@+id/question_1"
@@ -90,7 +72,6 @@
 
 
         // Question 4 (Boolean)
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -154,7 +135,6 @@
             android:textSize="@dimen/text_size" />
 
         // Question 4 (Boolean)
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -193,7 +173,6 @@
         </RadioGroup>
 
         // Question 5 (Boolean)
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -232,7 +211,6 @@
         </RadioGroup>
 
         // Question 6 (Boolean)
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -271,7 +249,6 @@
         </RadioGroup>
 
         // Question 7 (EditText)
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -287,8 +264,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hints" />
 
-        // Question 3 (Checked Box)
-
+        // Question 8 (Checked Box)
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

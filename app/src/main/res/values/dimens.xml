@@ -2,12 +2,12 @@
 <resources>
 
     <dimen name="font">35sp</dimen>
-    <dimen name="text_size">16sp</dimen>
-    <dimen name="font_size">16sp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="font_size">22sp</dimen>
     <dimen name="padding_all">16dp</dimen>
     <dimen name="padding_tt">30dp</dimen>
     <dimen name="padding_bottom1">50dp</dimen>
     <dimen name="padding_bottom">12dp</dimen>
     <dimen name="layout_bottom">20dp</dimen>
-
+    <dimen name="padding_left">16dp</dimen>
 </resources>
