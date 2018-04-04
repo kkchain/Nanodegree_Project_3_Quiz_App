@@ -34,25 +34,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Hide Android EditTExt Keyboard Each Time the app started
-        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-    }
+        // Initialize views at onCreate
 
-    public void submitAnswers(View view) {
         // get user name
         nameInput = (findViewById(R.id.enter_name));
-        // assign String to nameInput
-        userName = nameInput.getText().toString();
+        // Hide Android EditTExt Keyboard Each Time the app started
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         // get RadioButton ID from Question 1
         question_1Button = findViewById(R.id.q1_durian);
-        // call method to add 1 point if Question 1 answered correctly
-        calculateRadioButtonScores(question_1Button.isChecked());
 
         // get RadioButton ID from Question 2
         question_2Button = findViewById(R.id.q2_true);
-        // call method to add 1 point if Question 2 answered correctly
-        calculateRadioButtonScores(question_2Button.isChecked());
 
         // get CheckBox ID from Question 3
         indonesia_Checkbox = findViewById(R.id.q3_indonesia);
@@ -62,26 +55,43 @@ public class MainActivity extends AppCompatActivity {
         // get CheckBox ID from Question 8
         native_Checkbox = findViewById(R.id.q8_native);
         spikes_Checkbox = findViewById(R.id.q8_spikes);
-        // call method to add 1 point if Question 3 and 8 answered correctly
-        calculateCheckBoxScores(indonesia_Checkbox.isChecked(), malaysia_Checkbox.isChecked(), thailand_Checkbox.isChecked(), native_Checkbox.isChecked(), spikes_Checkbox.isChecked());
 
         // get RadioButton ID from Question 4
         question_4Button = findViewById(R.id.q4_jackfruit);
-        // call method to add 1 point if Question 4 answered correctly
-        calculateRadioButtonScores(question_4Button.isChecked());
 
         // get RadioButton ID from Question 5
         question_5Button = findViewById(R.id.q5_artocarpus);
-        // call method to add 1 point if Question 4 answered correctly
-        calculateRadioButtonScores(question_5Button.isChecked());
 
         // get RadioButton ID from Question 6
         question_6Button = findViewById(R.id.q6_mangosteen);
-        // call method to add 1 point if Question 6 answered correctly
-        calculateRadioButtonScores(question_6Button.isChecked());
 
         // Question 7 get participant favorite fruits
         fruitInput = (findViewById(R.id.enter_fruits));
+    }
+
+    public void submitAnswers(View view) {
+
+        // assign String to nameInput
+        userName = nameInput.getText().toString();
+
+        // call method to add 1 point if Question 1 answered correctly
+        calculateRadioButtonScores(question_1Button.isChecked());
+
+        // call method to add 1 point if Question 2 answered correctly
+        calculateRadioButtonScores(question_2Button.isChecked());
+
+        // call method to add 1 point if Question 3 and 8 answered correctly
+        calculateCheckBoxScores(indonesia_Checkbox.isChecked(), malaysia_Checkbox.isChecked(), thailand_Checkbox.isChecked(), native_Checkbox.isChecked(), spikes_Checkbox.isChecked());
+
+        // call method to add 1 point if Question 4 answered correctly
+        calculateRadioButtonScores(question_4Button.isChecked());
+
+        // call method to add 1 point if Question 4 answered correctly
+        calculateRadioButtonScores(question_5Button.isChecked());
+
+        // call method to add 1 point if Question 6 answered correctly
+        calculateRadioButtonScores(question_6Button.isChecked());
+
         // assign String to nameInput
         favoriteFruits = fruitInput.getText().toString();
 
