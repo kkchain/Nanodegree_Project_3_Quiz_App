@@ -8,45 +8,62 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/backGround"
+        android:orientation="vertical"
         tools:context="com.example.android.project3quiz.MainActivity">
 
         <LinearLayout
-            style="@style/style1">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                style="@style/style2"
-                android:fontFamily="casual"
-                android:padding="@dimen/padding_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_2"
                 android:text="@string/title"
-                android:textSize="@dimen/font"
-                android:background="@drawable/tropical"/>
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_layout_height"
+                android:background="@drawable/fruits" />
 
         </LinearLayout>
 
 
         // (EditText = Name Input)
+
         <EditText
             android:id="@+id/enter_name"
-            style="@style/style3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/layout_bottom"
             android:hint="@string/hints_name"
+            android:inputType="textCapCharacters"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_2"
             android:paddingTop="@dimen/padding_tt" />
 
-        // Question 1 (Multiple Choice)
+        // Question 1
+
         <TextView
-            style="@style/style4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:text="@string/question_1"
-            android:textSize="@dimen/text_size"/>
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/question_1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
             <RadioButton
                 android:id="@+id/q1_rambutan"
@@ -71,11 +88,13 @@
         </RadioGroup>
 
 
-        // Question 4 (Boolean)
+        // Question 2
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_2"
             android:textSize="@dimen/text_size"
@@ -85,7 +104,8 @@
             android:id="@+id/question_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
             <RadioButton
                 android:id="@+id/q2_true"
@@ -108,37 +128,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_3"
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/q3_indonesia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q3_answer1"
-            android:textSize="@dimen/text_size" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
-        <CheckBox
-            android:id="@+id/q3_malaysia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q3_answer2"
-            android:textSize="@dimen/text_size" />
+            <CheckBox
+                android:id="@+id/q3_indonesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q3_answer1"
+                android:textSize="@dimen/text_size" />
 
-        <CheckBox
-            android:id="@+id/q3_thailand"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q3_answer3"
-            android:textSize="@dimen/text_size" />
+            <CheckBox
+                android:id="@+id/q3_malaysia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q3_answer2"
+                android:textSize="@dimen/text_size" />
+
+            <CheckBox
+                android:id="@+id/q3_thailand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q3_answer3"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
 
         // Question 4 (Boolean)
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_4"
             android:textSize="@dimen/text_size"
@@ -148,7 +180,8 @@
             android:id="@+id/question_4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
             <RadioButton
                 android:id="@+id/q4_jackfruit"
@@ -173,10 +206,12 @@
         </RadioGroup>
 
         // Question 5 (Boolean)
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_5"
             android:textSize="@dimen/text_size"
@@ -186,7 +221,8 @@
             android:id="@+id/question_5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
             <RadioButton
                 android:id="@+id/q5_papaya"
@@ -211,10 +247,12 @@
         </RadioGroup>
 
         // Question 6 (Boolean)
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_6"
             android:textSize="@dimen/text_size"
@@ -224,7 +262,8 @@
             android:id="@+id/question_6"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
             <RadioButton
                 android:id="@+id/q6_starFruit"
@@ -249,51 +288,73 @@
         </RadioGroup>
 
         // Question 7 (EditText)
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_7"
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/enter_fruits"
-            android:layout_width="match_parent"
+            android:id="@+id/enter_fruits_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/hints" />
+            android:layout_marginLeft="20dp"
+            android:hint="@string/hint1"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/enter_fruits_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/hint2"
+            android:inputType="textCapCharacters" />
 
         // Question 8 (Checked Box)
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
             android:paddingTop="@dimen/padding_tt"
             android:text="@string/question_8"
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/q8_native"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/q8_answer1"
-            android:textSize="@dimen/text_size" />
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left">
 
-        <CheckBox
-            android:id="@+id/q8_spikes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q8_answer2"
-            android:textSize="@dimen/text_size" />
+            <CheckBox
+                android:id="@+id/q8_native"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q8_answer1"
+                android:textSize="@dimen/text_size" />
 
-        <CheckBox
-            android:id="@+id/q8_cold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q8_answer3"
-            android:textSize="@dimen/text_size" />
+            <CheckBox
+                android:id="@+id/q8_spikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q8_answer2"
+                android:textSize="@dimen/text_size" />
+
+            <CheckBox
+                android:id="@+id/q8_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q8_answer3"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
